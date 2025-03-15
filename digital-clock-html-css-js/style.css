@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.digital-clock-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#digital-clock {
+  font-family: "14-segment-led-regular", "digital-7";
+  font-size: 10vw;
+  text-shadow: 1px 1px 4px rgb(12, 132, 253);
+}
+
+/* font face */
+
+@font-face {
+  font-family: "14-segment-led-regular";
+  src: url(fonts/14_Segment_LED_Regular.ttf);
+}
+
+@font-face {
+  font-family: "digital-7";
+  src: url(fonts/digital-7.ttf);
+}
+
+@font-face {
+  font-family: "digital-7-italic";
+  src: url(fonts/digital-7-italic.ttf);
+}
+
+/* media queries */
+
+@media screen and (max-width: 950px) {
+  #digital-clock {
+    text-shadow: 0.8px 0.8px 3px rgb(12, 132, 253);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #digital-clock {
+    text-shadow: 0.3px 0.3px 1px rgb(12, 132, 253);
+  }
+}
+
+@media screen and (max-width: 650) {
+  #digital-clock {
+    text-shadow: 0.3px 0.3px 1px rgb(12, 132, 253);
+  }
+}
