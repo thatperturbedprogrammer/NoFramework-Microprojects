@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localstorage Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2>Save Your Note</h2>
+    <textarea name="note" id="note" placeholder="Write something..." rows="20" cols="80"></textarea>
+    <br />
+
+    <button onclick="saveNote()" id="save-btn">Save</button>
+    <button onclick="deleteNote()" id="delete-btn">Delete</button>
+
+    <p><strong>Saved Note: </strong></p>
+    <p id="saved-note"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
